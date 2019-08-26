@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
-const devs = ['434372713289744385','301493032673345537'];
-var prefix = "!";
-const adminprefix = "!"
+const devs = ['409045670943784974','404699513446727680'];
+var prefix = "^";
+const adminprefix = "^"
 const db = require('quick.db');
 const client = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -33,7 +33,7 @@ const pretty = require('pretty-ms')
 
 
 
-var prefix = "$";
+var prefix = "^";
 client.on('message', message => {
          if (message.content === prefix + "dt") {
          if (!message.channel.guild) return message.reply('** This command only for servers **');  
@@ -416,53 +416,6 @@ client.on('message', ( message ) => {
   return;
 } //Toxic Codes
 });
-
-
-
- client.on('message', message => { 
-    if (message.content.startsWith("تهكير")) {
-  if(!message.channel.guild) return message.reply(' ');
-      if (message.author.bot) return
-           message.delete();
-             let args = message.content.split(' ').slice(1);
-                   let virusname = args.join(' ');
-                 if (virusname < 1) {
-                     return message.channel.send("** رجائاََ منشن من تريد تهكيره ** ");
-                                     }
-                 message.channel.send({embed: new Discord.RichEmbed().setTitle('Loading ' + virusname + "...").setColor(0xFF0000)}).then(function(m) {
-             setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle(`** Loading  [▓] 1%**`).setColor(0xFF0000)})
-             }, 5500) 
-             setTimeout(function() {
-                m.edit({embed: new Discord.RichEmbed().setTitle(`** Loading [▓▓▓▓] 25%**`).setColor(0xFF0000)})
-              }, 10500)
-              setTimeout(function() {
-                 m.edit({embed: new Discord.RichEmbed().setTitle(`** Loading [▓▓▓▓▓▓▓▓] 50%**`).setColor(0xFF0000)})
-               }, 15500)
-               setTimeout(function() {
-                  m.edit({embed: new Discord.RichEmbed().setTitle(`** Loading [▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 75%**`).setColor(0xFF0000)})
-                }, 25500)
-           setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle(`** Hacking Done [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%**`).setColor(0xFF0000)})
-             }, 30500)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle(`** ..يتم الدخول للحساب** `).setColor(0xFF0000)})
-             }, 40500)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle(`** ..يتم حفظ بيانات الحساب** `).setColor(0xFF0000)})
-             }, 45500)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle(`** ..يتم رفع البيانات** `).setColor(0xFF0000)})
-             }, 50500)
-              setTimeout(function() {
-               m.delete()
-           }, 55000)
-             setTimeout(function() {
-               message.channel.send('** تم الاختراق  __Done Hacking__ **').then(msg => msg.delete(25000));
-           }, 60500)
-           });
-         }
- });
  
 
 
