@@ -1035,7 +1035,7 @@ client.on('ebnklb',function(ebnklb) {
 client.on('message', message => {
 if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send The Help In DMS // Code By NotGucci
     let pages = [`
-***__DANGER BOT__***
+***__ZONE BOT__***
 **
     تمتع بمزايه جميله وحمايه افضل :gear:  
   
