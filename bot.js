@@ -336,31 +336,6 @@ client.on('message', function(message) {
 
 
 
-const bannedwords = [
-    "كس امك",
-    "كسامك",
-    "كلب",
-    "حيوان",
-    "جرار",
-    "قحبه",
-    "يا كسمك",
-    "يا متناك",
-    "يامتناك",
-    "طيز",
-    "كسس",
-    "كس",
-    "متناكك"
-  ];
-
-client.on('message',  message => {
-  if(bannedwords.some(word => message.content.includes(word))) {
-    message.delete()
-    message.reply(" :rage: ممنوع السب والقذف  ").then(msg => {msg.delete(3000)});;
-  };
-});
-
-
-
 client.on('message' , message => {
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "ping")) {
@@ -3130,7 +3105,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/yDHQZhC**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/AgEaCn5**")
      
      
   message.channel.sendEmbed(embed);
@@ -3232,7 +3207,7 @@ client.on("message", (message) => {
 });  
 
 const sWlc = {}
-const premium = ['389090790984515594']
+const premium = ['409045670943784974']
 client.on('message', message => {
 var prefix = "!";
 if(message.channel.type === "dm") return;
