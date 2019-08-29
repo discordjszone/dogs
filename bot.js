@@ -3302,6 +3302,7 @@ client.on("guildMemberAdd", member => {
       }
       });
 
+const ms = require('ms');
 const cool = [];
 client.on('message',async message => {
   if(message.author.bot) return;
