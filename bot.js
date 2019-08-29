@@ -8,6 +8,7 @@ const giphy = require('giphy-api')();
 const googl = require('goo.gl');  
 const translate = require('google-translate-api');   
 const fs = require("fs");
+const ms = require('ms');
 const canvas = require("canvas");
 const getYoutubeID = require('get-youtube-id'); 
 const moment = require("moment");  
@@ -3301,7 +3302,6 @@ client.on("guildMemberAdd", member => {
       }
       });
 
-const ms = require('ms');
 const cool = [];
 client.on('message',async message => {
   if(message.author.bot) return;
