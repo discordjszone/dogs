@@ -3302,6 +3302,7 @@ client.on("guildMemberAdd", member => {
       }
       });
 
+const cool = [];
 client.on('message',async message => {
   if(message.author.bot) return;
   if(message.channel.type === 'dm') return;
@@ -3395,7 +3396,6 @@ client.on('message',async message => {
     }, ms("1d"));
   }
 });
-
 
 
 //MHSTR END NOW THIS IS END
