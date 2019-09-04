@@ -2564,7 +2564,7 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return m
 client.on('guildCreate', guild => {
   var embed = new Discord.RichEmbed()
   .setColor(0x5500ff)
-  .setDescription(`**TKSشكراً لك لإضافه البوت الى سيرفرك**`)
+  .setDescription(`**شكراً لك لإضافه البوت الى سيرفرك**`)
       guild.owner.send(embed)
 });
 
